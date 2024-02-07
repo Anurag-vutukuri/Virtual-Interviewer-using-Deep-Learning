@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% include 'includes/_navbar.html' %}
+  <title>Virtual Interviewer - Question</title>
+  <style>
+    /* Styles for container div */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    
+    /* Styles for question */
+    h1 {
+      font-size: 56px;
+      margin-bottom: 2rem;
+      font-weight: bold;
+    }
+    
+    /* Styles for button */
+    button {
+      font-size: 2rem;
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Container for question and button -->
+  <div class="container">
+    <!-- Question -->
+    <h1>Q1.What makes this position a good fit for you at this point in your career?</h1>
+    <h5>(You have a limited time of 45 seconds to provide your response to the question. The system will automatically submit your answer after the allotted time, and the result will be displayed afterward.)</h5>
+    <!-- Button to submit answer -->
+    <br/>
+    <br/>
+    <button id="myButton" onclick="window.location.href='{{ url_for('multimodal') }}'">Start</button>
+  </div>
+
+  
+</body>
+</html>
